@@ -371,6 +371,8 @@ function getSelectedPipVideoFile() {
 function setVideoDurationFromFile(url, field) {
     var $clipLengthField = $('#clip-length');
     $clipLengthField.prop('disabled', true);
+    console.log("here",url);
+    console.log(encodeURIComponent(url));
 
     $.get(encodeURIComponent(url), function (data, status) {
         var metadata = data.response.metadata;
