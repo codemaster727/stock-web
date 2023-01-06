@@ -1,8 +1,8 @@
-var apiUrl = 'https://4vo71cixa7.execute-api.us-east-1.amazonaws.com/demo/'; // 'https://1ky45v1fp9.execute-api.ap-southeast-2.amazonaws.com/demo/';
+var apiUrl = 'https://4vo71cixa7.execute-api.eu-west-1.amazonaws.com/demo/'; // 'https://1ky45v1fp9.execute-api.ap-southeast-2.amazonaws.com/demo/';
 var apiEndpoint = apiUrl + 'shotstack';
 var urlEndpoint = apiUrl + 'upload/sign';
-var probeEndpoint = 'https://4vo71cixa7.execute-api.us-east-1.amazonaws.com/demo/';
-var s3Bucket = 'https://picture-stock-test.s3-us-east-1.amazonaws.com/';
+var probeEndpoint = 'https://4vo71cixa7.execute-api.eu-west-1.amazonaws.com/demo/';
+var s3Bucket = 'https://picture-stock-test.s3-eu-west-1.amazonaws.com/';
 var progress = 0;
 var progressIncrement = 10;
 var pollIntervalSeconds = 10;
