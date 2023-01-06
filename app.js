@@ -372,7 +372,7 @@ function setVideoDurationFromFile(url, field) {
     var $clipLengthField = $('#clip-length');
     $clipLengthField.prop('disabled', true);
 
-    $.get(probeEndpoint + encodeURIComponent(url), function (data, status) {
+    $.get(encodeURIComponent(url), function (data, status) {
         var metadata = data.response.metadata;
         var duration = Math.round(metadata.format.duration * 10) / 10;
 
