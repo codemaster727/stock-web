@@ -374,7 +374,7 @@ function setVideoDurationFromFile(url, field) {
     console.log("here",url);
     console.log(encodeURIComponent(url));
 
-    $.get(encodeURIComponent(url), function (data, status) {
+    $.get(url, function (data, status) {
         var metadata = data.response.metadata;
         var duration = Math.round(metadata.format.duration * 10) / 10;
 
